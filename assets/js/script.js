@@ -9,9 +9,9 @@ function processOptions(form) {
 
     let optArray = [];
 
-    for (let entry of form.entries()) {
-        if (entry[0] ==="options") {
-            optArray.push(entry[1]);
+    for (let e of form.entries()) {
+        if (e[0] ==="options") {
+            optArray.push(e[1]);
         }
     }
 
