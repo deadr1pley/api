@@ -19,7 +19,7 @@ async function postForm(e) {
 
      const data = await response.json();
 
-     if(respons.ok) {
+     if(response.ok) {
         console.log(data);
      } else {
         throw new Error(data.error);
@@ -47,7 +47,7 @@ function displayStatus(data) {
     results += `<div class="key-status">${data.expiry}</div>`;
 
     document.getElementById("resultsModalTitle").innerText = heading;
-    document.getElementById("reults-content").innerHTML = results;
+    document.getElementById("results-content").innerHTML = results;
 
     resultsModal.show();
 }
